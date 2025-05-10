@@ -18,9 +18,10 @@ const jwtToken=require("jsonwebtoken");
 
 require('dotenv').config();
 const PORT = process.env.PORT || 5000;
+const JWT_SECRET = process.env.JWT_SECRET;
 
 
-const JWT_SECRET="your_super_secrect_key";
+
 
 
 let db_path=path.join(__dirname,"dataStorage.db");
